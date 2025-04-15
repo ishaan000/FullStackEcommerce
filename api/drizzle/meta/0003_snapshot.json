@@ -1,6 +1,6 @@
 {
-  "id": "fc29b870-cbee-4c08-9126-9e1009e8b5f4",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "cd09a68b-932f-4d26-ac33-6fa0c280af07",
+  "prevId": "d86b7c5c-212e-4381-96e9-98f457b653d0",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -48,13 +48,6 @@
           "type": "double precision",
           "primaryKey": false,
           "notNull": true
-        },
-        "quantity": {
-          "name": "quantity",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "default": 0
         }
       },
       "indexes": {},

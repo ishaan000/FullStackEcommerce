@@ -1,6 +1,6 @@
 {
-  "id": "fc29b870-cbee-4c08-9126-9e1009e8b5f4",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "db3e9dad-83c9-4830-8be8-46feea115f22",
+  "prevId": "fc29b870-cbee-4c08-9126-9e1009e8b5f4",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -55,6 +55,12 @@
           "primaryKey": false,
           "notNull": false,
           "default": 0
+        },
+        "type": {
+          "name": "type",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
         }
       },
       "indexes": {},
