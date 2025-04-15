@@ -1,4 +1,5 @@
 import { desc } from "drizzle-orm";
+import { createInsertSchema } from "drizzle-zod";
 import {
   integer,
   pgTable,
@@ -14,3 +15,13 @@ export const productsTable = pgTable("products", {
   image: varchar({ length: 255 }),
   price: doublePrecision().notNull(),
 });
+
+export const createProductSchema = createInsertSchema(productsTable).omit({
+  id: true as never,
+});
+
+export const updateProductSchema = createInsertSchema(productsTable)
+  .omit({
+    id: true as never,
+  })
+  .partial();
